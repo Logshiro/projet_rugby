@@ -625,3 +625,8 @@ body.nav-open { overflow: hidden; }
   .scoreboard { grid-template-columns: 1fr 1fr; }
   .section { padding: 64px 0; }
 }
+
+.contact-single {
+  max-width: 480px;
+  margin: 0 auto;
+}

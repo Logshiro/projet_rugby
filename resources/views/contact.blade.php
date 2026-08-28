@@ -15,111 +15,7 @@
 
 <section class="section">
     <div class="container">
-        <div class="contact-grid">
-
-            {{-- Formulaire --}}
-            <div class="contact-card">
-
-                @if (session('success'))
-                    <div class="alert alert--success" role="status">
-                        <span aria-hidden="true">✓</span>
-                        <span>{{ session('success') }}</span>
-                    </div>
-                @endif
-
-                @if ($errors->any())
-                    <div class="alert alert--error" role="alert">
-                        <span aria-hidden="true">!</span>
-                        <span>Merci de corriger les champs signalés ci-dessous avant d'envoyer le formulaire.</span>
-                    </div>
-                @endif
-
-                <form method="POST" action="{{ route('contact.send') }}" novalidate>
-                    @csrf
-
-                    <div class="form-row">
-                        <div class="field @error('nom') has-error @enderror">
-                            <label for="nom">Nom <span class="required">*</span></label>
-                            <input
-                                type="text"
-                                id="nom"
-                                name="nom"
-                                value="{{ old('nom') }}"
-                                required
-                                autocomplete="name"
-                                aria-describedby="{{ $errors->has('nom') ? 'nom-error' : '' }}"
-                            >
-                            @error('nom')
-                                <p class="error-msg" id="nom-error">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div class="field @error('email') has-error @enderror">
-                            <label for="email">Email <span class="required">*</span></label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value="{{ old('email') }}"
-                                required
-                                autocomplete="email"
-                                aria-describedby="{{ $errors->has('email') ? 'email-error' : '' }}"
-                            >
-                            @error('email')
-                                <p class="error-msg" id="email-error">{{ $message }}</p>
-                            @enderror
-                        </div>
-                    </div>
-
-                    <div class="field @error('telephone') has-error @enderror">
-                        <label for="telephone">Téléphone</label>
-                        <input
-                            type="tel"
-                            id="telephone"
-                            name="telephone"
-                            value="{{ old('telephone') }}"
-                            autocomplete="tel"
-                        >
-                        <small class="hint">Facultatif — utile si vous préférez qu'on vous rappelle.</small>
-                    </div>
-
-                    <div class="field @error('sujet') has-error @enderror">
-                        <label for="sujet">Sujet <span class="required">*</span></label>
-                        <select id="sujet" name="sujet" required>
-                            <option value="" {{ old('sujet') ? '' : 'selected' }} disabled>Choisissez un sujet</option>
-                            <option value="inscription" {{ old('sujet') == 'inscription' ? 'selected' : '' }}>Inscription / essai</option>
-                            <option value="benevolat" {{ old('sujet') == 'benevolat' ? 'selected' : '' }}>Bénévolat</option>
-                            <option value="partenariat" {{ old('sujet') == 'partenariat' ? 'selected' : '' }}>Partenariat / sponsoring</option>
-                            <option value="presse" {{ old('sujet') == 'presse' ? 'selected' : '' }}>Presse</option>
-                            <option value="autre" {{ old('sujet') == 'autre' ? 'selected' : '' }}>Autre</option>
-                        </select>
-                        @error('sujet')
-                            <p class="error-msg">{{ $message }}</p>
-                        @enderror
-                    </div>
-
-                    <div class="field @error('message') has-error @enderror">
-                        <label for="message">Message <span class="required">*</span></label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            aria-describedby="{{ $errors->has('message') ? 'message-error' : '' }}"
-                        >{{ old('message') }}</textarea>
-                        @error('message')
-                            <p class="error-msg" id="message-error">{{ $message }}</p>
-                        @enderror
-                    </div>
-
-                    {{-- Honeypot anti-spam invisible (ne pas afficher au visiteur) --}}
-                    <div style="position:absolute; left:-9999px;" aria-hidden="true">
-                        <label for="site_web">Ne pas remplir</label>
-                        <input type="text" id="site_web" name="site_web" tabindex="-1" autocomplete="off">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                </form>
-            </div>
+        <div class="contact-single">
 
             {{-- Coordonnées --}}
             <aside class="info-card" aria-label="Coordonnées du club">
@@ -140,18 +36,18 @@
                         </span>
                         <span>
                             <span class="label">Téléphone</span>
-                            <a class="value" href="tel:+330670121022">06 70 12 10 22</a>
+                            <span class="value">06 70 12 10 22</span>
                         </span>
                     </li>
-                    <li>
+                    <!--<li>
                         <span class="ico" aria-hidden="true">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12v8H2V4z" stroke="#fff" stroke-width="1.2"/><path d="M2 4l6 5 6-5" stroke="#fff" stroke-width="1.2"/></svg>
                         </span>
-                        <span>
+                         <span>
                             <span class="label">Email</span>
                             <a class="value" href="mailto:contact@aol-rugby.fr">contact@aol-rugby.fr</a>
-                        </span>
-                    </li>
+                        </span> 
+                    </li>-->
                 </ul>
 
                 <div class="social-row">

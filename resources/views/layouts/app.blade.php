@@ -22,9 +22,8 @@
     <meta property="og:image" content="{{ asset('images/og-cover.jpg') }}">
     <meta name="twitter:card" content="summary_large_image">
 
-    {{-- Favicon (à remplacer par le logo du club) --}}
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" sizes="any">
-    <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
+    {{-- Favicon --}}
+    <link rel="icon" href="{{ \Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.jpg') }}" type="image/png">
 
     {{-- Polices --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +40,7 @@
         "name": "AOL Rugby",
         "sport": "Rugby",
         "url": "{{ url('/') }}",
-        "logo": "{{ asset('images/logo.png') }}",
+        "logo": "{{ \Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.jpg') }}",
         "address": {
             "@@type": "PostalAddress",
             "streetAddress": "Adresse du stade à compléter",

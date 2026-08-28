@@ -26,8 +26,8 @@
                     le rugby forme des joueurs, mais surtout des personnes.
                 </p>
                 <p>
-                    Aujourd'hui, le club rassemble plusieurs catégories, de l'école de rugby aux séniors, portées par
-                    des éducateurs formés et une communauté de supporters fidèles au stade chaque week-end.
+                    Aujourd'hui, le club à une volonté de persister, de l'école de rugby aux Loisirs Associatifs, portées par
+                    son président et une communauté de joueurs engagés.
                 </p>
                 <a href="{{ route('contact') }}" class="btn btn-ghost-dark">Nous rejoindre</a>
             </div>
@@ -55,7 +55,7 @@
             <article class="value-card">
                 <span class="num">02</span>
                 <h3>Solidarité</h3>
-                <p>Un pack ne porte personne seul. Sur le terrain comme au club-house, on avance ensemble.</p>
+                <p>Un pack ne porte personne seul. Sur le terrain, on avance ensemble.</p>
             </article>
             <article class="value-card">
                 <span class="num">03</span>
@@ -71,19 +71,19 @@
     <div class="container">
         <div class="section-head">
             <p class="eyebrow">Le club en chiffres</p>
-            <h2>Une saison au tableau</h2>
+            <h2>Une nouvelle saison</h2>
         </div>
         <div class="scoreboard">
             <div class="scoreboard__item">
-                <div class="value">1975</div>
+                <div class="value">1968</div>
                 <div class="label">Année de création</div>
             </div>
             <div class="scoreboard__item">
-                <div class="value">220+</div>
+                <div class="value">20+</div>
                 <div class="label">Licenciés</div>
             </div>
             <div class="scoreboard__item">
-                <div class="value">6</div>
+                <div class="value">associatif</div>
                 <div class="label">Catégories</div>
             </div>
             <div class="scoreboard__item">

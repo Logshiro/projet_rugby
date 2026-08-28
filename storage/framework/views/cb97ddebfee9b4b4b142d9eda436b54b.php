@@ -9,7 +9,7 @@
             <h1 class="hero__club">AOL<br><span>Rugby</span></h1>
             <p class="hero__tagline">
                 Un club où l'engagement sur le terrain se prolonge dans les valeurs qu'on porte hors du terrain :
-                le respect, la solidarité et la transmission, de l'école de rugby à la première équipe.
+                le respect, la solidarité et la transmission, avec l'école de rugby et le loisir.
             </p>
             <a href="<?php echo e(route('presentation')); ?>" class="text-link">
                 Découvrir le club

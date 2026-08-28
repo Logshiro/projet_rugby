@@ -23,8 +23,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     
-    <link rel="icon" href="<?php echo e(asset('images/favicon.ico')); ?>" sizes="any">
-    <link rel="icon" href="<?php echo e(asset('images/logo.png')); ?>" type="image/png">
+    <link rel="icon" href="<?php echo e(\Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.jpg')); ?>" type="image/png">
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +40,7 @@
         "name": "AOL Rugby",
         "sport": "Rugby",
         "url": "<?php echo e(url('/')); ?>",
-        "logo": "<?php echo e(asset('images/logo.png')); ?>",
+        "logo": "<?php echo e(\Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.jpg')); ?>",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Adresse du stade à compléter",

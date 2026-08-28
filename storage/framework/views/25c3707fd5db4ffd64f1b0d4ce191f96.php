@@ -1,8 +1,8 @@
 <header class="navbar" id="site-navbar">
     <div class="container">
         <a href="<?php echo e(route('home')); ?>" class="navbar__brand" aria-label="AOL Rugby — Accueil">
-            <?php if(file_exists(resource_path('images/Logo_AOL.png'))): ?>
-                <img src="<?php echo e(\Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.png')); ?>" alt="Logo AOL Rugby">
+            <?php if(file_exists(resource_path('images/Logo_AOL.jpg'))): ?>
+                <img src="<?php echo e(\Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.jpg')); ?>" alt="Logo AOL Rugby">
             <?php else: ?>
                 <span class="brand-fallback" aria-hidden="true">AOL</span>
             <?php endif; ?>

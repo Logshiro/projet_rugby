@@ -1,8 +1,8 @@
 <header class="navbar" id="site-navbar">
     <div class="container">
         <a href="{{ route('home') }}" class="navbar__brand" aria-label="AOL Rugby — Accueil">
-            @if(file_exists(resource_path('images/Logo_AOL.png')))
-                <img src="{{ \Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.png') }}" alt="Logo AOL Rugby">
+            @if(file_exists(resource_path('images/Logo_AOL.jpg')))
+                <img src="{{ \Illuminate\Support\Facades\Vite::asset('resources/images/Logo_AOL.jpg') }}" alt="Logo AOL Rugby">
             @else
                 <span class="brand-fallback" aria-hidden="true">AOL</span>
             @endif
